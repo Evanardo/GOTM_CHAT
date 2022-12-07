@@ -1,0 +1,64 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.15;
+    height: 100vh;
+    background: linear-gradient(-90deg,#141211,#3a4548,#141211);
+    background-size: 400% 400%;
+    animation: gradient 75s ease infinite;
+}
+
+.sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3135;
+    color: #ebebe0;
+    border-bottom: 3px solid #26282c;
+}
+
+.sidebar__channels {
+    flex: 1;
+}
+
+.sidebar__addChannels {
+    cursor: pointer;
+}
+
+.sidebar__addChannels:hover{
+    color:#ebebe0;
+}
+
+.sidebar__channelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color: gray;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+.sidebar__profileInfo {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar__profileInfo > h3 {
+    color: #ebebe0;
+}

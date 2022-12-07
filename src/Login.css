@@ -1,0 +1,38 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
+    background-size: 400% 400%;
+    animation: gradient 75s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+.login > button {
+    width: 300px;
+    background-color: #465356;
+    color: #ebebe0;
+    font-weight: 800;
+}
+
+.login > button:hover {
+    background-color: #3a4548;
+    color: #c6b280;
+}
+
+.login > div > img {
+    object-fit: contain;
+    height: 50px;
+}
