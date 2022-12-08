@@ -1,20 +1,24 @@
 import { Avatar } from '@mui/material';
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 import "./Message.css";
 
 function Message() {
+  const user = useSelector(selectUser);
+ 
   return (
     <div className='message'>
-        <Avatar />
+        <Avatar src={user.photo}/>
         <div className='message__info'>
             <h4>
-                last.elixir
+                {user.displayName}
                 <span className='message__timestamp'>this is a timestamp</span>
             </h4>
-            <p>This is a message</p>
+            <p>This feature shall bring blessings in the future. All you have to do is... prey</p>
         </div>
     </div>
   )
-}
+};
 
-export default Message
+export default Message;

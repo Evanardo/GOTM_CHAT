@@ -6,6 +6,7 @@ import Message from './Message';
 function Chat() {
   return (
     <div className='chat'>
+      
       <h1>GOTM CHAT</h1>
         <div className='goTm-chat-header'>
 
@@ -19,7 +20,7 @@ function Chat() {
 
         <div className='chat__input'>
             <form>
-                <input placeholder={`Sermon`} />
+                <input className='inputs'placeholder={`Message`} />
                 <button className='chat__inputButton' type='submit'></button>
             </form>
         </div>

@@ -1,42 +1,54 @@
-import { Avatar } from '@mui/material';
-import React from 'react';
+import { Avatar, Button } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { logout, selectUser } from './features/userSlice';
+import db from './FirebaseConfig';
 import "./Sidebar.css";
 import SidebarChannel from './SidebarChannel';
+import { auth } from './FirebaseConfig';
 
 
 function Sidebar() {
-  return (
-      <div className='sidebar'>
-          {/* <h2>GOTM</h2> */}
-
-          <div className='sidebar__top'>
-              <h3>GOTM Devotional</h3>
-          </div>
-
-          <div className='sidebar__channels'>
-              <div className='sidebar__channelsHeader'>
-                  <div className='sidebar__header'>
-                      <h4>Text Channels</h4>
-                  </div>
-
-              </div>
-
-              <div className='sidebar__channelsList'>
-                  <SidebarChannel />
-              </div>
+    const user = useSelector(selectUser);
 
 
-          </div>
-          
-          <div className='sidebar__profile'>
-              <Avatar />
-              <div className='sidebar__profileInfo'>
-                  <h3>last.elixir</h3>
-              </div>
-          </div>
 
-      </div>
-  )
-}
+    return (
+        <div className='sidebar'>
 
-export default Sidebar
+
+            <div className='sidebar__top'>
+                <Button onClick={() => auth.signOut()}>sign out</Button>
+            </div>
+
+            <div className='sidebar__channels'>
+                <div className='sidebar__channelsHeader'>
+                    <div className='sidebar__header'>
+                        {/* <Button>+</Button> */}
+                    </div>
+
+                </div>
+
+                <div className='sidebar__channelsList'>
+                    {/* {channels.map((channel) => ( */}
+                    <SidebarChannel />
+
+
+                </div>
+
+
+            </div>
+
+            <div className='sidebar__profile'>
+                <Avatar src={user.photo} />
+                <div className='sidebar__profileInfo'>
+                    <h3>{user.displayName}</h3>
+
+                </div>
+            </div>
+
+        </div>
+    )
+};
+
+export default Sidebar;

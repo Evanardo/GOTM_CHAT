@@ -6,6 +6,7 @@
     background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
     background-size: 400% 400%;
     animation: gradient 75s ease infinite;
+    font-family: 'Alien League Expanded', sans-serif;
 }
 
 @keyframes gradient {

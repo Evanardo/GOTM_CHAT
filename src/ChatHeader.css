@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: gray;
+    /* color: gray; */
     padding: 10px;
 }
 
@@ -27,15 +27,21 @@
 .chatHeader__search {
     display: flex;
     align-items: center;
-    color: gray;
-    background-color: #2f3135;
+    color: #ebebe0;
+    /* background-color: #2f3135; */
     border-radius: 3px;
     padding: 3px;
+    width: 27vh;
+    background-color: rgb(255, 255, 255, 0.01);
+    margin-bottom: 0.5vw;
+    margin-top: 1.5vw;
+    border: 1px solid lightgrey;
+    justify-content: center;
 }
 
 .chatHeader__search > form >input {
     background: transparent;
     outline-width: 0;
-    color: #ebebe0;
+    color: #141211;
     border: none;
 }

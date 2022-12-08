@@ -2,15 +2,18 @@ import { Button } from '@mui/material';
 import { auth, provider, signInPopup } from './FirebaseConfig';
 import React from 'react';
 import './Login.css';
-import { GoogleAuthProvider, signInWithPopup, getAuth } from 'firebase/auth';
+import { signInWithPopup } from 'firebase/auth';
 
 
 function Login() {
 
-
-  const signIn = (e) => {
-    e.preventDefault();
-    auth.signInWithPopup(provider).catch((error) => alert(error.message));
+  const signIn = async () => {
+    // e.preventDefault();
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.log(error)
+    }
   };
   return (
     <div className='login'>
@@ -23,4 +26,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Login;

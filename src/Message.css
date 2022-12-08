@@ -2,15 +2,22 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    color: #ebebe0;
+    color: #c6b280;
 }
 
 .message__info {
     margin-left: 20px;
+    font-size: small;
 }
 
 .message__timestamp{
     color: gray;
     margin-left: 20px;
     font-size: x-small;
+}
+
+.message__info > p {
+    padding-top: 6px;
+    color: #ebebe0;
+    font-size: large;
 }
