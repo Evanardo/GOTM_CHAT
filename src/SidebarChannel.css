@@ -5,9 +5,11 @@
 .sidebarChannel > h4 {
     display: flex;
     padding-left:  15px;
+    padding-top:  15px;
     align-items: center;
     color:#8f805f;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .sidebarChannel__hash{

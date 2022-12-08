@@ -8,7 +8,6 @@
     animation: gradient 75s ease infinite;
 }
 
-
 .sidebar__top {
     display: flex;
     justify-content: space-between;
@@ -18,6 +17,31 @@
     color: #ebebe0;
     /* border-bottom: 3px solid #26282c; */
 }
+.card{
+    display: flex;
+    max-width: 17rem;
+    background-color: rgba(255,255,255,0.05);
+    margin: .5vh;
+    border-radius: 20px;
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    color: #ebebe0;
+}
+
+.gotm-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Alien League Expanded', sans-serif;
+    font-size:xx-large;
+    color:#c6b280;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+  
+}
+
 .sidebar__top > button {
     width: 300px;
     background-color: #465356;
@@ -62,8 +86,8 @@
     align-items: center;
     color: #8f805f;
     padding: 10px;
-    border-top: 1px solid ;
-    margin-bottom: 35px;
+    border-bottom: 1px solid ;
+    margin-bottom: 28px;
 }
 
 .sidebar__profileInfo {

@@ -6,6 +6,7 @@ import db from './FirebaseConfig';
 import "./Sidebar.css";
 import SidebarChannel from './SidebarChannel';
 import { auth } from './FirebaseConfig';
+import Eastward from './Eastward.avif'
 
 
 function Sidebar() {
@@ -15,10 +16,23 @@ function Sidebar() {
 
     return (
         <div className='sidebar'>
+            
 
 
             <div className='sidebar__top'>
-                <Button onClick={() => auth.signOut()}>sign out</Button>
+              <div className="card">
+                <div className="card-body">
+                    <h6 className="card-text">Current Game of the Month</h6>
+                    <div className='curLast-month'>
+
+                        <h3 className="gotm-title">Eastward</h3>
+                        {/* <Link className="gotm-title" to={`/games/${game.name}`} state= {{game: game}}>Eastward</Link> */}
+                    </div>
+                    
+                </div>
+                <img className="card" alt='' src={Eastward}/>
+
+                </div>
             </div>
 
             <div className='sidebar__channels'>
@@ -43,10 +57,14 @@ function Sidebar() {
                 <Avatar src={user.photo} />
                 <div className='sidebar__profileInfo'>
                     <h3>{user.displayName}</h3>
+                    
 
                 </div>
             </div>
-
+            <div className='sidebar__top'>
+                    <Button onClick={() => auth.signOut()}>sign out</Button>
+            
+                    </div>
         </div>
     )
 };

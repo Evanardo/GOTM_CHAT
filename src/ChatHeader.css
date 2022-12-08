@@ -31,17 +31,16 @@
     /* background-color: #2f3135; */
     border-radius: 3px;
     padding: 3px;
-    width: 27vh;
     background-color: rgb(255, 255, 255, 0.01);
     margin-bottom: 0.5vw;
-    margin-top: 1.5vw;
-    border: 1px solid lightgrey;
+    margin-top: 0.25vw;
+    border: 1px solid lightgray;
     justify-content: center;
 }
 
 .chatHeader__search > form >input {
     background: transparent;
     outline-width: 0;
-    color: #141211;
+    color: #ebebe0;
     border: none;
 }
