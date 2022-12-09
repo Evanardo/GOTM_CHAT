@@ -1,4 +1,4 @@
-.sidebarChannel:hover > h4 {
+.sidebarBody:hover > h4 {
     color: #c6b280;
 }
 
@@ -8,11 +8,10 @@
     padding-top:  15px;
     align-items: center;
     color:#8f805f;
-    cursor: pointer;
     justify-content: space-between;
 }
 
-.sidebarChannel__hash{
+.sidebarChannel_span{
     font-size: 30px;
     padding: 8px;
 }

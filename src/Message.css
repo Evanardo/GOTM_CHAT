@@ -5,18 +5,18 @@
     color: #c6b280;
 }
 
-.message__info {
+.messageInfo {
     margin-left: 20px;
     font-size: small;
 }
 
-.message__timestamp{
+.messageTimestamp{
     color: gray;
     margin-left: 20px;
     font-size: x-small;
 }
 
-.message__info > p {
+.messageInfo > p {
     padding-top: 6px;
     color: #ebebe0;
     font-size: large;

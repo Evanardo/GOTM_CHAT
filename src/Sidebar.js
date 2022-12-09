@@ -6,7 +6,8 @@ import db from './FirebaseConfig';
 import "./Sidebar.css";
 import SidebarChannel from './SidebarChannel';
 import { auth } from './FirebaseConfig';
-import Eastward from './Eastward.avif'
+// import Eastward from './Eastward.avif';
+import smt from './shin-megami-tensei-iii-nocturne-hd-remaster-face.jpg';
 
 
 function Sidebar() {
@@ -15,56 +16,40 @@ function Sidebar() {
 
 
     return (
-        <div className='sidebar'>
+        <div className='sideNav'>
             
 
 
-            <div className='sidebar__top'>
-              <div className="card">
-                <div className="card-body">
-                    <h6 className="card-text">Current Game of the Month</h6>
-                    <div className='curLast-month'>
+            <div className='sideNav_top'>
+                <div className="card">
+                    <div className="card-body">
 
-                        <h3 className="gotm-title">Eastward</h3>
-                        {/* <Link className="gotm-title" to={`/games/${game.name}`} state= {{game: game}}>Eastward</Link> */}
+                        <h6 className="card-text">Current Game of the Month</h6>
+
+                        <div className='curLast-month'>
+                            <h3 className="gotm-title">SMT III Nocturne</h3>
+                        </div>
+
                     </div>
-                    
-                </div>
-                <img className="card" alt='' src={Eastward}/>
+
+                    <img className="card" alt='' src={smt} />
 
                 </div>
             </div>
 
-            <div className='sidebar__channels'>
-                <div className='sidebar__channelsHeader'>
-                    <div className='sidebar__header'>
-                        {/* <Button>+</Button> */}
-                    </div>
+            <div className='sidebarSpacer'></div>
 
-                </div>
-
-                <div className='sidebar__channelsList'>
-                    {/* {channels.map((channel) => ( */}
-                    <SidebarChannel />
-
-
-                </div>
-
-
-            </div>
-
-            <div className='sidebar__profile'>
+            <div className='sideNav_profile'>
                 <Avatar src={user.photo} />
-                <div className='sidebar__profileInfo'>
+                <div className='sideNav_profileInfo'>
                     <h3>{user.displayName}</h3>
-                    
-
                 </div>
             </div>
-            <div className='sidebar__top'>
-                    <Button onClick={() => auth.signOut()}>sign out</Button>
-            
-                    </div>
+
+            <div className='sideNav_top'>
+                <Button onClick={() => auth.signOut()}>sign out</Button>
+            </div>
+
         </div>
     )
 };

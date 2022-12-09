@@ -18,12 +18,12 @@ function Login() {
   return (
     <div className='login'>
 
-        <div className='login__logo'>
+        <div className='loginLogo'>
             <img src='https://i.ibb.co/T1rfpMX/Screenshot-2022-12-03-at-9-09-30-PM.png' alt=''/>
         </div>
         <Button onClick={signIn}>Join Us</Button>
     </div>
   )
-}
+};
 
 export default Login;

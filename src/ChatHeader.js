@@ -6,8 +6,8 @@ function ChatHeader() {
     <div className='chatHeader'>
         
 
-        <div className='chatHeader__right'>
-            <div className='chatHeader__search'>
+        <div className='chatHeader_right'>
+            <div className='chatHeader_search'>
                 <form>
                     <input className='chat-search' placeholder='What is it you seek?' />
                 </form>

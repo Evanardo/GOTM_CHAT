@@ -10,10 +10,10 @@ function Message() {
   return (
     <div className='message'>
         <Avatar src={user.photo}/>
-        <div className='message__info'>
+        <div className='messageInfo'>
             <h4>
                 {user.displayName}
-                <span className='message__timestamp'>this is a timestamp</span>
+                <span className='messageTimestamp'>this is a timestamp</span>
             </h4>
             <p>This feature shall bring blessings in the future. All you have to do is... prey</p>
         </div>

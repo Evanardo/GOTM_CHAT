@@ -1,4 +1,4 @@
-.sidebar {
+.sideNav {
     display: flex;
     flex-direction: column;
     flex: 0.15;
@@ -8,7 +8,7 @@
     animation: gradient 75s ease infinite;
 }
 
-.sidebar__top {
+.sideNav_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,14 +35,14 @@
     display: flex;
     justify-content: center;
     font-family: 'Alien League Expanded', sans-serif;
-    font-size:xx-large;
+    font-size:x-large;
     color:#c6b280;
     background-color: rgb(255, 255, 255, 0);
     border: none;
   
 }
 
-.sidebar__top > button {
+.sideNav_top > button {
     width: 300px;
     background-color: #465356;
     color: #ebebe0;
@@ -54,19 +54,11 @@
     color: #c6b280;
 }
 
-.sidebar__channels {
+.sidebarSpacer {
     flex: 1;
 }
 
-.sidebar__addChannels {
-    cursor: pointer;
-}
-
-.sidebar__addChannels:hover{
-    color:#ebebe0;
-}
-
-.sidebar__channelHeader {
+.sidebarHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,12 +67,12 @@
     color: gray;
 }
 
-.sidebar__header {
+.sidebar_header {
     display: flex;
     align-items: center;
 }
 
-.sidebar__profile {
+.sideNav_profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,12 +82,12 @@
     margin-bottom: 28px;
 }
 
-.sidebar__profileInfo {
+.sideNav_profileInfo {
     flex: 1;
     padding: 10px;
 }
 
-.sidebar__profileInfo > h3 {
+.sideNav_profileInfo > h3 {
     color: #8f805f;
     font-family: 'Alien League Expanded', sans-serif;
 }

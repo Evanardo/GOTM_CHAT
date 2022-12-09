@@ -6,25 +6,14 @@
     padding: 10px;
 }
 
-.chatHeader__hash {
-    color: gray;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.chatHeader__left > h3 {
+.chatHeader_right {
     display: flex;
     align-items: center;
+    flex: 1;
+    justify-content:flex-end;
 }
 
-.chatHeader__right {
-    display: flex;
-    align-items: center;
-    flex: 0.5;
-    justify-content: space-between;
-}
-
-.chatHeader__search {
+.chatHeader_search {
     display: flex;
     align-items: center;
     color: #ebebe0;
@@ -36,9 +25,10 @@
     margin-top: 0.25vw;
     border: 1px solid lightgray;
     justify-content: center;
+
 }
 
-.chatHeader__search > form >input {
+.chatHeader_search > form >input {
     background: transparent;
     outline-width: 0;
     color: #ebebe0;

@@ -4,20 +4,21 @@
     flex: 0.85;
     height: 100vh;
 }
+
 h1{
     color: #ebebe0;
     font-family: 'Alien League Expanded', sans-serif;
     font-size:3rem;
     justify-content: center;
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.chat__messages {
+.chatMessages {
     flex: 1;
 }
 
-.chat__input {
+.chatInput {
     color: lightgray;
     display: flex;
     align-items: center;
@@ -29,21 +30,21 @@ h1{
     /* background-color: #474b53; */
 }
 
-.chat__input > form > input {
+.chatInput > form > input {
     padding: 15px;
     background: transparent;
     border: none;
     width: 100%;
     outline-width: 0;
-    color: #8f805f;
+    color: #ebebe0;
     font-size: large;
 }
 
-.chat__input > form {
+.chatInput > form {
     flex: 1;
 }
 
-.chat__inputButton {
+.chatInputButton {
     display: none;
 }
 

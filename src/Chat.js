@@ -8,24 +8,23 @@ function Chat() {
     <div className='chat'>
       
       <h1>GOTM CHAT</h1>
-        <div className='goTm-chat-header'>
 
-            <ChatHeader/>
-            
+        <div className='goTm-chat-header'>
+          <ChatHeader/>  
         </div>
         
-        <div className='chat__messages'>
+        <div className='chatMessages'>
           <Message />
         </div>
 
-        <div className='chat__input'>
+        <div className='chatInput'>
             <form>
                 <input className='inputs'placeholder={`Message`} />
-                <button className='chat__inputButton' type='submit'></button>
+                <button className='chatInputButton' type='submit'></button>
             </form>
         </div>
     </div>
   )
-}
+};
 
-export default Chat
+export default Chat;
